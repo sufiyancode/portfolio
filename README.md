@@ -52,3 +52,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Connect With Me
+
+- **GitHub**: [sufiyancode](https://github.com/sufiyancode)
+- **LinkedIn**: [sufiyan-shaikh22](https://linkedin.com/in/sufiyan-shaikh22)
+- **Email**: [sksufiyan9860@gmail.com](mailto:sksufiyan9860@gmail.com)
