@@ -1,9 +1,15 @@
 const AboutContent = ({ skills }) => (
   <div className="space-y-4">
     <p className="text-gray-300">
-      I'm a Bachelor of Engineering student in Electronics and Telecommunication
-      at Bharati Vidyapeeth's College of Engineering, Pune, pursuing my degree
-      from 2021 to 2025.
+      "I'm a Full-Stack Developer with a passion for building practical software
+      solutions. Currently pursuing my Engineering degree, I've already gained
+      valuable experience as a Software Engineer Trainee at The Data Tech Labs
+      Inc. and as a freelance developer. I specialize in creating efficient web
+      applications using React.js, Django, and Node.js. I enjoy working both
+      independently on freelance projects and collaboratively with teams, as
+      shown in my work with Google Developer Groups Pune. What drives me is
+      turning innovative ideas into working solutions that make a real
+      difference for users and businesses.
     </p>
     <div className="grid md:grid-cols-2 gap-8 mt-8">
       <div>
