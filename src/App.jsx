@@ -3,169 +3,6 @@ import { Menu, X, Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 import project1Image from "./assets/project1.png";
 import project2Image from "./assets/project2.png";
 
-// const App = () => {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//   // Example project data - replace with your own
-//   const projects = [
-//     {
-//       title: "Project 1",
-//       description: "A full-stack web application",
-//       technologies: ["React", "Node.js", "MongoDB"],
-//       image: project1Image,
-//     },
-//     {
-//       title: "Project 2",
-//       description: "Mobile-first responsive design",
-//       technologies: ["React Native", "Firebase"],
-//       image: project2Image,
-//     },
-//   ];
-
-//   return (
-//     <div className="min-h-screen bg-gray-900 text-gray-100">
-//       {/* Navigation */}
-//       <nav className="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50">
-//         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//           <div className="flex items-center justify-between h-16">
-//             <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-//               Your Name
-//             </span>
-
-//             {/* Desktop Navigation */}
-//             <div className="hidden md:block">
-//               <div className="flex items-center space-x-8">
-//                 <a
-//                   href="#about"
-//                   className="hover:text-purple-400 transition-colors"
-//                 >
-//                   About
-//                 </a>
-//                 <a
-//                   href="#experience"
-//                   className="hover:text-purple-400 transition-colors"
-//                 >
-//                   Experience
-//                 </a>
-//                 <a
-//                   href="#projects"
-//                   className="hover:text-purple-400 transition-colors"
-//                 >
-//                   Projects
-//                 </a>
-//                 <a
-//                   href="#contact"
-//                   className="hover:text-purple-400 transition-colors"
-//                 >
-//                   Contact
-//                 </a>
-//               </div>
-//             </div>
-
-//             {/* Mobile menu button */}
-//             <button
-//               className="md:hidden p-2 rounded-md hover:bg-gray-800"
-//               onClick={() => setIsMenuOpen(!isMenuOpen)}
-//             >
-//               {isMenuOpen ? <X /> : <Menu />}
-//             </button>
-//           </div>
-//         </div>
-//       </nav>
-
-//       {/* Hero Section */}
-//       <section className="pt-32 pb-20 px-4 max-w-7xl mx-auto">
-//         <div className="max-w-3xl">
-//           <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-//             Hi, I'm Your Name
-//           </h1>
-//           <p className="text-xl text-gray-400 mb-8">
-//             A passionate developer crafting beautiful digital experiences
-//           </p>
-//           <div className="flex space-x-4">
-//             <a
-//               href="#projects"
-//               className="px-6 py-3 bg-purple-600 rounded-full hover:bg-purple-700 transition-colors"
-//             >
-//               View Projects
-//             </a>
-//             <a
-//               href="#contact"
-//               className="px-6 py-3 border border-purple-600 rounded-full hover:bg-purple-600/10 transition-colors"
-//             >
-//               Contact Me
-//             </a>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Projects Section */}
-//       <section id="projects" className="py-20 px-4 max-w-7xl mx-auto">
-//         <h2 className="text-3xl font-bold mb-12">Featured Projects</h2>
-//         <div className="grid md:grid-cols-2 gap-8">
-//           {projects.map((project, index) => (
-//             <div
-//               key={index}
-//               className="bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-[1.02] transition-all"
-//             >
-//               <img
-//                 src={project.image}
-//                 alt={project.title}
-//                 className="w-full h-48 object-cover"
-//               />
-//               <div className="p-6">
-//                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-//                 <p className="text-gray-400 mb-4">{project.description}</p>
-//                 <div className="flex flex-wrap gap-2">
-//                   {project.technologies.map((tech, i) => (
-//                     <span
-//                       key={i}
-//                       className="px-3 py-1 bg-purple-600/20 rounded-full text-sm"
-//                     >
-//                       {tech}
-//                     </span>
-//                   ))}
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </section>
-
-//       {/* Contact Section */}
-//       <section id="contact" className="py-20 px-4 max-w-7xl mx-auto">
-//         <h2 className="text-3xl font-bold mb-12">Get In Touch</h2>
-//         <div className="flex justify-center space-x-8">
-//           <a
-//             href="https://github.com"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//             className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
-//           >
-//             <Github size={24} />
-//           </a>
-//           <a
-//             href="https://linkedin.com"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//             className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
-//           >
-//             <Linkedin size={24} />
-//           </a>
-//           <a
-//             href="mailto:your.email@example.com"
-//             className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
-//           >
-//             <Mail size={24} />
-//           </a>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default App;
-
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -282,6 +119,38 @@ const App = () => {
             </button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-gray-900/95 backdrop-blur-sm">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a
+                href="#about"
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-purple-400"
+              >
+                About
+              </a>
+              <a
+                href="#experience"
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-purple-400"
+              >
+                Experience
+              </a>
+              <a
+                href="#projects"
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-purple-400"
+              >
+                Projects
+              </a>
+              <a
+                href="#contact"
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-purple-400"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
