@@ -21,7 +21,7 @@ export const projects = [
       'CometChat',
     ],
     image: thisVersusImage,
-    link: 'https://frontend-three-wine-44.vercel.app/',
+    link: 'https://thisversus.com',
   },
   {
     title: 'TheEndorse – Referral-Based Hiring Platform',
